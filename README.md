@@ -1,3 +1,4 @@
-# uvv_bd_1_cc1n
-## Repositorio direcionado a prática de exercícios da Matéria de Banco de Dados
+# Repositorio direcionado à prática de exercícios na matéria de Banco de Dados
+## Fernando de Souza Teixeira
+## Professor Abrantes Araújo Silva Filho
 
