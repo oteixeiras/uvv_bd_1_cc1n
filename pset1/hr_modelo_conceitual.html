@@ -1,0 +1,601 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+    <head>
+        <META http-equiv="Content-Type" content="text/html; charset=iso-8859-15">
+        <style>
+      .table {
+        background-color:#F5F5FF;
+        border-left:4px solid gray;
+        border-bottom:4px solid gray;
+        border-top:4px solid gray;
+        border-right:4px solid gray;
+        margin-bottom:3em;
+        margin-left:2em;
+        margin-right:2em;
+        padding:1em;
+      }
+      .tableNameHeading h1 {
+          display: inline;
+        font-family: Segoe UI, Arial, sans-serif;
+        font-size:125%;
+        font-weight:bold;
+      }
+        
+      .tableNameHeading h2 {
+        display: inline;
+        font-family: Segoe UI, Arial, sans-serif;
+        font-size:115%;
+        font-weight:normal;
+      }
+      
+      .tableComment { 
+        background-color:#e4efff; margin-bottom:20px;
+      }
+      
+      .tableDefinition { 
+        padding:2px;
+        border-collapse:collapse;
+        margin-top:1em;
+      }
+
+      .tdTableDefinition {
+        padding-right:10px;
+        vertical-align:top;
+        border-top:1px solid #C0C0C0;
+      }
+
+      .tdLogicalColName {
+        width:20em;
+      }
+      
+      .tdPhysicalColName {
+        width:20em;
+      }
+      
+      .tdDataType {
+        width:10em;
+      }
+
+      .tdPkFlag {
+        width:4em;
+      }
+
+      .tdNullFlag {
+        width:9em;
+      }
+
+      .tdTableHeading {
+        padding:2px;
+        font-family: Segoe UI, Arial, sans-serif;
+        font-weight: bold;
+        vertical-align:top;
+        border-bottom: 1px solid #C0C0C0;
+        background-color: rgb(240,240,240);
+      }
+      
+      .subTitle {
+        font-family: Segoe UI, Arial, sans-serif;
+        font-weight: bold;
+      }
+
+      .references {
+      }
+      .comment {
+        color:#666666;
+        margin-left:3em;
+        padding:0.25em;
+      }
+    </style>
+        <title>Documents</title>
+    </head>
+    <body>
+        <center>
+            <h2>Documents</h2>
+        </center>
+        <h3>List of tables</h3>
+        <ul>
+            <li>
+                <a href="#cargos">cargos</a>
+            </li>
+            <li>
+                <a href="#departamentos">departamentos</a>
+            </li>
+            <li>
+                <a href="#empregados">empregados</a>
+            </li>
+            <li>
+                <a href="#empregados_departamentos">empregados_departamentos</a>
+            </li>
+            <li>
+                <a href="#historico_cargos">historico_cargos</a>
+            </li>
+            <li>
+                <a href="#localizacoes">localizacoes</a>
+            </li>
+            <li>
+                <a href="#paises">paises</a>
+            </li>
+        </ul>
+        <div class="tableNameHeading">
+            <h1>
+                cargos<a name="cargos"></a>
+            </h1>
+            <h2>
+      (Physical Name: cargos)
+      </h2>
+            <p class="comment">Tabela para conter as informa&ccedil;&otilde;es detalhadas sobre os cargos existentes dentro da empersa.</p>
+        </div>
+        <div class="table">
+            <table class="tableDefinition" width="100%">
+                <tr>
+                    <td class="tdTableHeading tdLogicalColName">Logical Column Name</td><td class="tdTableHeading tdPhysicalColName">Physical Column Name</td><td class="tdTableHeading tdDataType">Type</td><td class="tdTableHeading tdPkFlag">PK</td><td class="tdTableHeading tdNullFlag">Nullable</td>
+                </tr>
+                <tr valign="top">
+                    <td class="tdTableDefinition">id_cargo (PK)</td><td class="tdTableDefinition">id_cargo</td><td class="tdTableDefinition">INTEGER</td><td class="tdTableDefinition" nowrap>PK</td><td class="tdTableDefinition" nowrap>NOT NULL</td>
+                </tr>
+                <tr>
+                    <td colspan="4">
+                        <div class="comment">Chave prim&aacute;ria da tabela (gerada de forma incremental).</div>
+                    </td>
+                </tr>
+                <tr valign="top">
+                    <td class="tdTableDefinition">cargo</td><td class="tdTableDefinition">cargo</td><td class="tdTableDefinition">VARCHAR(32)</td><td class="tdTableDefinition" nowrap></td><td class="tdTableDefinition" nowrap>NOT NULL</td>
+                </tr>
+                <tr>
+                    <td colspan="4">
+                        <div class="comment">Nome do cargo.</div>
+                    </td>
+                </tr>
+                <tr valign="top">
+                    <td class="tdTableDefinition">salario_minimo</td><td class="tdTableDefinition">salario_minimo</td><td class="tdTableDefinition">DECIMAL(8,2)</td><td class="tdTableDefinition" nowrap></td><td class="tdTableDefinition" nowrap>NOT NULL</td>
+                </tr>
+                <tr>
+                    <td colspan="4">
+                        <div class="comment">valor do sal&aacute;rio m&iacute;nimo pago dentro do cargo.</div>
+                    </td>
+                </tr>
+                <tr valign="top">
+                    <td class="tdTableDefinition">salario_maximo</td><td class="tdTableDefinition">salario_maximo</td><td class="tdTableDefinition">DECIMAL(8,2)</td><td class="tdTableDefinition" nowrap></td><td class="tdTableDefinition" nowrap>NOT NULL</td>
+                </tr>
+                <tr>
+                    <td colspan="4">
+                        <div class="comment">valor do sal&aacute;rio m&aacute;ximo pago dentro do cargo.</div>
+                    </td>
+                </tr>
+                <tr valign="top">
+                    <td class="tdTableDefinition">id_historico_cargos
+                &nbsp;(<a href="#historico_cargos">FK</a>)
+              </td><td class="tdTableDefinition">id_historico_cargos</td><td class="tdTableDefinition">INTEGER</td><td class="tdTableDefinition" nowrap></td><td class="tdTableDefinition" nowrap>NOT NULL</td>
+                </tr>
+                <tr>
+                    <td colspan="4">
+                        <div class="comment">Chave estrangeira da tabela historico_cargos para trazer informa&ccedil;&otilde;es sobre os trabalhadores atuais e antigos, dentro de cada cargo da empresa.</div>
+                    </td>
+                </tr>
+            </table>
+            <div class="references">
+                <p class="subTitle">References</p>
+                <ul>
+                    <li>
+                        <a href="#historico_cargos">historico_cargos</a> through (id_historico_cargos)
+                    </li>
+                </ul>
+                <p class="subTitle">Referenced By</p>
+                <ul>
+                    <li>
+                        <a href="#empregados">empregados</a> referencing (id_cargo)
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="tableNameHeading">
+            <h1>
+                departamentos<a name="departamentos"></a>
+            </h1>
+            <h2>
+      (Physical Name: departamentos)
+      </h2>
+            <p class="comment">Tabela para conter as informa&ccedil;&otilde;es dos departamentos.</p>
+        </div>
+        <div class="table">
+            <table class="tableDefinition" width="100%">
+                <tr>
+                    <td class="tdTableHeading tdLogicalColName">Logical Column Name</td><td class="tdTableHeading tdPhysicalColName">Physical Column Name</td><td class="tdTableHeading tdDataType">Type</td><td class="tdTableHeading tdPkFlag">PK</td><td class="tdTableHeading tdNullFlag">Nullable</td>
+                </tr>
+                <tr valign="top">
+                    <td class="tdTableDefinition">id_departamento (PK)</td><td class="tdTableDefinition">id_departamento</td><td class="tdTableDefinition">INTEGER</td><td class="tdTableDefinition" nowrap>PK</td><td class="tdTableDefinition" nowrap>NOT NULL</td>
+                </tr>
+                <tr>
+                    <td colspan="4">
+                        <div class="comment">Chave prim&aacute;ria da tabela (gerada de forma incremental).</div>
+                    </td>
+                </tr>
+                <tr valign="top">
+                    <td class="tdTableDefinition">nome</td><td class="tdTableDefinition">nome</td><td class="tdTableDefinition">VARCHAR(50)</td><td class="tdTableDefinition" nowrap></td><td class="tdTableDefinition" nowrap>NOT NULL</td>
+                </tr>
+                <tr>
+                    <td colspan="4">
+                        <div class="comment">Nome do departamento</div>
+                    </td>
+                </tr>
+                <tr valign="top">
+                    <td class="tdTableDefinition">id_localizacao
+                &nbsp;(<a href="#localizacoes">FK</a>)
+              </td><td class="tdTableDefinition">id_localizacao</td><td class="tdTableDefinition">INTEGER</td><td class="tdTableDefinition" nowrap></td><td class="tdTableDefinition" nowrap>NOT NULL</td>
+                </tr>
+                <tr>
+                    <td colspan="4">
+                        <div class="comment">Chave estrangeira da tabela localizacao para trazer informa&ccedil;&otilde;es sobre o endere&ccedil;o que possui o departamento.</div>
+                    </td>
+                </tr>
+                <tr valign="top">
+                    <td class="tdTableDefinition">id_historico_cargos
+                &nbsp;(<a href="#historico_cargos">FK</a>)
+              </td><td class="tdTableDefinition">id_historico_cargos</td><td class="tdTableDefinition">INTEGER</td><td class="tdTableDefinition" nowrap></td><td class="tdTableDefinition" nowrap>NOT NULL</td>
+                </tr>
+                <tr>
+                    <td colspan="4">
+                        <div class="comment">Chave estrangeira da tabela historico_cargos, para trazer informa&ccedil;&otilde;es relacionadas ao hist&oacute;rico do departamento.</div>
+                    </td>
+                </tr>
+            </table>
+            <div class="references">
+                <p class="subTitle">References</p>
+                <ul>
+                    <li>
+                        <a href="#localizacoes">localizacoes</a> through (id_localizacao)
+                    </li>
+                    <li>
+                        <a href="#historico_cargos">historico_cargos</a> through (id_historico_cargos)
+                    </li>
+                </ul>
+                <p class="subTitle">Referenced By</p>
+                <ul>
+                    <li>
+                        <a href="#empregados_departamentos">empregados_departamentos</a> referencing (id_departamento)
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="tableNameHeading">
+            <h1>
+                empregados<a name="empregados"></a>
+            </h1>
+            <h2>
+      (Physical Name: empregados)
+      </h2>
+            <p class="comment">Tabela para conter as informa&ccedil;&otilde;es dos funcion&aacute;rios.</p>
+        </div>
+        <div class="table">
+            <table class="tableDefinition" width="100%">
+                <tr>
+                    <td class="tdTableHeading tdLogicalColName">Logical Column Name</td><td class="tdTableHeading tdPhysicalColName">Physical Column Name</td><td class="tdTableHeading tdDataType">Type</td><td class="tdTableHeading tdPkFlag">PK</td><td class="tdTableHeading tdNullFlag">Nullable</td>
+                </tr>
+                <tr valign="top">
+                    <td class="tdTableDefinition">id_empregado (PK)</td><td class="tdTableDefinition">id_empregado</td><td class="tdTableDefinition">INTEGER</td><td class="tdTableDefinition" nowrap>PK</td><td class="tdTableDefinition" nowrap>NOT NULL</td>
+                </tr>
+                <tr>
+                    <td colspan="4">
+                        <div class="comment">Chave prim&aacute;ria da tabela (gerada de forma incremental).</div>
+                    </td>
+                </tr>
+                <tr valign="top">
+                    <td class="tdTableDefinition">email</td><td class="tdTableDefinition">email</td><td class="tdTableDefinition">VARCHAR(35)</td><td class="tdTableDefinition" nowrap></td><td class="tdTableDefinition" nowrap>NOT NULL</td>
+                </tr>
+                <tr>
+                    <td colspan="4">
+                        <div class="comment">Endere&ccedil;o eletr&ocirc;nico do empregado.</div>
+                    </td>
+                </tr>
+                <tr valign="top">
+                    <td class="tdTableDefinition">telefone</td><td class="tdTableDefinition">telefone</td><td class="tdTableDefinition">VARCHAR(20)</td><td class="tdTableDefinition" nowrap></td><td class="tdTableDefinition" nowrap></td>
+                </tr>
+                <tr>
+                    <td colspan="4">
+                        <div class="comment">Telefone de contato do empregado.</div>
+                    </td>
+                </tr>
+                <tr valign="top">
+                    <td class="tdTableDefinition">salario</td><td class="tdTableDefinition">salario</td><td class="tdTableDefinition">DECIMAL(8,2)</td><td class="tdTableDefinition" nowrap></td><td class="tdTableDefinition" nowrap></td>
+                </tr>
+                <tr>
+                    <td colspan="4">
+                        <div class="comment">S&aacute;l&aacute;rio mensal total recebido pelo funcion&aacute;rio.</div>
+                    </td>
+                </tr>
+                <tr valign="top">
+                    <td class="tdTableDefinition">comissao</td><td class="tdTableDefinition">comissao</td><td class="tdTableDefinition">DECIMAL(4,2)</td><td class="tdTableDefinition" nowrap></td><td class="tdTableDefinition" nowrap></td>
+                </tr>
+                <tr>
+                    <td colspan="4">
+                        <div class="comment">Porcentagem da comiss&atilde;o que um empregado, caso seja da &aacute;era comercial, poder&aacute; receber dentro do m&ecirc;s.</div>
+                    </td>
+                </tr>
+                <tr valign="top">
+                    <td class="tdTableDefinition">nome</td><td class="tdTableDefinition">nome</td><td class="tdTableDefinition">VARCHAR(75)</td><td class="tdTableDefinition" nowrap></td><td class="tdTableDefinition" nowrap>NOT NULL</td>
+                </tr>
+                <tr>
+                    <td colspan="4">
+                        <div class="comment">Nome do empregado.</div>
+                    </td>
+                </tr>
+                <tr valign="top">
+                    <td class="tdTableDefinition">id_cargo
+                &nbsp;(<a href="#cargos">FK</a>)
+              </td><td class="tdTableDefinition">id_cargo</td><td class="tdTableDefinition">INTEGER</td><td class="tdTableDefinition" nowrap></td><td class="tdTableDefinition" nowrap>NOT NULL</td>
+                </tr>
+                <tr>
+                    <td colspan="4">
+                        <div class="comment">Chave estranjeira referenciando a tabela de cargo, para indicar qual o cargo exercido pelo funcion&aacute;rio dentro da empresa.</div>
+                    </td>
+                </tr>
+                <tr valign="top">
+                    <td class="tdTableDefinition">data_contratacao</td><td class="tdTableDefinition">data_contratacao</td><td class="tdTableDefinition">DATE</td><td class="tdTableDefinition" nowrap></td><td class="tdTableDefinition" nowrap>NOT NULL</td>
+                </tr>
+                <tr>
+                    <td colspan="4">
+                        <div class="comment">Data que o empregado inciou o trabalho dentro da empresa</div>
+                    </td>
+                </tr>
+            </table>
+            <div class="references">
+                <p class="subTitle">References</p>
+                <ul>
+                    <li>
+                        <a href="#cargos">cargos</a> through (id_cargo)
+                    </li>
+                </ul>
+                <p class="subTitle">Referenced By</p>
+                <ul>
+                    <li>
+                        <a href="#empregados_departamentos">empregados_departamentos</a> referencing (id_empregado)
+                    </li>
+                    <li>
+                        <a href="#historico_cargos">historico_cargos</a> referencing (id_empregado)
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="tableNameHeading">
+            <h1>
+                empregados_departamentos<a name="empregados_departamentos"></a>
+            </h1>
+            <h2>
+      (Physical Name: empregados_departamentos)
+      </h2>
+            <p class="comment">Tabela interm&eacute;di&aacute;ria para conex&atilde;o das tabelas empregados e departamentos, permitindo assim que um empregado possa estar em v&aacute;rios departamentos (caso tenha mais de um cargo), al&eacute;m de garantir aos departamentos terem diversos funcion&aacute;rios.</p>
+        </div>
+        <div class="table">
+            <table class="tableDefinition" width="100%">
+                <tr>
+                    <td class="tdTableHeading tdLogicalColName">Logical Column Name</td><td class="tdTableHeading tdPhysicalColName">Physical Column Name</td><td class="tdTableHeading tdDataType">Type</td><td class="tdTableHeading tdPkFlag">PK</td><td class="tdTableHeading tdNullFlag">Nullable</td>
+                </tr>
+                <tr valign="top">
+                    <td class="tdTableDefinition">id_empregados_departamentos (PK)</td><td class="tdTableDefinition">id_empregados_departamentos</td><td class="tdTableDefinition">INTEGER</td><td class="tdTableDefinition" nowrap>PK</td><td class="tdTableDefinition" nowrap>NOT NULL</td>
+                </tr>
+                <tr>
+                    <td colspan="4">
+                        <div class="comment">Chave prim&aacute;ria da tabela (gerada de forma incremental).</div>
+                    </td>
+                </tr>
+                <tr valign="top">
+                    <td class="tdTableDefinition">id_empregado
+                &nbsp;(<a href="#empregados">FK</a>)
+              </td><td class="tdTableDefinition">id_empregado</td><td class="tdTableDefinition">INTEGER</td><td class="tdTableDefinition" nowrap></td><td class="tdTableDefinition" nowrap>NOT NULL</td>
+                </tr>
+                <tr>
+                    <td colspan="4">
+                        <div class="comment">Chave estrangeira da tabela empregado para trazer as informa&ccedil;&otilde;es de cadastro do empregado.</div>
+                    </td>
+                </tr>
+                <tr valign="top">
+                    <td class="tdTableDefinition">id_departamento
+                &nbsp;(<a href="#departamentos">FK</a>)
+              </td><td class="tdTableDefinition">id_departamento</td><td class="tdTableDefinition">INTEGER</td><td class="tdTableDefinition" nowrap></td><td class="tdTableDefinition" nowrap>NOT NULL</td>
+                </tr>
+                <tr>
+                    <td colspan="4">
+                        <div class="comment">Chave estrangeira da tabela departamento para trazer as informa&ccedil;&otilde;es do departamento.</div>
+                    </td>
+                </tr>
+            </table>
+            <div class="references">
+                <p class="subTitle">References</p>
+                <ul>
+                    <li>
+                        <a href="#departamentos">departamentos</a> through (id_departamento)
+                    </li>
+                    <li>
+                        <a href="#empregados">empregados</a> through (id_empregado)
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="tableNameHeading">
+            <h1>
+                historico_cargos<a name="historico_cargos"></a>
+            </h1>
+            <h2>
+      (Physical Name: historico_cargos)
+      </h2>
+            <p class="comment">Tabela que aramazena o hist&oacute;rico de trabalho do funcion&aacute;rio dentro da empresa.</p>
+        </div>
+        <div class="table">
+            <table class="tableDefinition" width="100%">
+                <tr>
+                    <td class="tdTableHeading tdLogicalColName">Logical Column Name</td><td class="tdTableHeading tdPhysicalColName">Physical Column Name</td><td class="tdTableHeading tdDataType">Type</td><td class="tdTableHeading tdPkFlag">PK</td><td class="tdTableHeading tdNullFlag">Nullable</td>
+                </tr>
+                <tr valign="top">
+                    <td class="tdTableDefinition">id_historico_cargos (PK)</td><td class="tdTableDefinition">id_historico_cargos</td><td class="tdTableDefinition">INTEGER</td><td class="tdTableDefinition" nowrap>PK</td><td class="tdTableDefinition" nowrap>NOT NULL</td>
+                </tr>
+                <tr>
+                    <td colspan="4">
+                        <div class="comment">Chave prim&aacute;ria da tabela (gerada de forma incremental).</div>
+                    </td>
+                </tr>
+                <tr valign="top">
+                    <td class="tdTableDefinition">id_empregado (PK)
+                &nbsp;(<a href="#empregados">FK</a>)
+              </td><td class="tdTableDefinition">id_empregado</td><td class="tdTableDefinition">INTEGER</td><td class="tdTableDefinition" nowrap>PK</td><td class="tdTableDefinition" nowrap>NOT NULL</td>
+                </tr>
+                <tr valign="top">
+                    <td class="tdTableDefinition">data_inicial  </td><td class="tdTableDefinition">data_inicial  </td><td class="tdTableDefinition">DATE</td><td class="tdTableDefinition" nowrap></td><td class="tdTableDefinition" nowrap>NOT NULL</td>
+                </tr>
+                <tr>
+                    <td colspan="4">
+                        <div class="comment">Data inicial do funcion&aacute;rio dentro do cargo.</div>
+                    </td>
+                </tr>
+                <tr valign="top">
+                    <td class="tdTableDefinition">data_final</td><td class="tdTableDefinition">data_final</td><td class="tdTableDefinition">DATE</td><td class="tdTableDefinition" nowrap></td><td class="tdTableDefinition" nowrap>NOT NULL</td>
+                </tr>
+                <tr>
+                    <td colspan="4">
+                        <div class="comment">Ultimo dia do empregado dentro do cargo (Precisa ser maior do que a data inicial)</div>
+                    </td>
+                </tr>
+            </table>
+            <div class="references">
+                <p class="subTitle">References</p>
+                <ul>
+                    <li>
+                        <a href="#empregados">empregados</a> through (id_empregado)
+                    </li>
+                </ul>
+                <p class="subTitle">Referenced By</p>
+                <ul>
+                    <li>
+                        <a href="#cargos">cargos</a> referencing (id_historico_cargos)
+                    </li>
+                    <li>
+                        <a href="#departamentos">departamentos</a> referencing (id_historico_cargos)
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="tableNameHeading">
+            <h1>
+                localizacoes<a name="localizacoes"></a>
+            </h1>
+            <h2>
+      (Physical Name: localizacoes)
+      </h2>
+            <p class="comment">Tabela que contem as informa&ccedil;&otilde;es mais detalhadas sobre as localiza&ccedil;&otilde;es f&iacute;sicas da empresa.</p>
+        </div>
+        <div class="table">
+            <table class="tableDefinition" width="100%">
+                <tr>
+                    <td class="tdTableHeading tdLogicalColName">Logical Column Name</td><td class="tdTableHeading tdPhysicalColName">Physical Column Name</td><td class="tdTableHeading tdDataType">Type</td><td class="tdTableHeading tdPkFlag">PK</td><td class="tdTableHeading tdNullFlag">Nullable</td>
+                </tr>
+                <tr valign="top">
+                    <td class="tdTableDefinition">id_localizacao (PK)</td><td class="tdTableDefinition">id_localizacao</td><td class="tdTableDefinition">INTEGER</td><td class="tdTableDefinition" nowrap>PK</td><td class="tdTableDefinition" nowrap>NOT NULL</td>
+                </tr>
+                <tr>
+                    <td colspan="4">
+                        <div class="comment">Chave prim&aacute;ria da tabela (gerada de forma incremental).</div>
+                    </td>
+                </tr>
+                <tr valign="top">
+                    <td class="tdTableDefinition">endereco</td><td class="tdTableDefinition">endereco</td><td class="tdTableDefinition">VARCHAR(50)</td><td class="tdTableDefinition" nowrap></td><td class="tdTableDefinition" nowrap></td>
+                </tr>
+                <tr>
+                    <td colspan="4">
+                        <div class="comment">cadastro do logradouro e n&uacute;mero de identifica&ccedil;&atilde;o do im&oacute;vel.</div>
+                    </td>
+                </tr>
+                <tr valign="top">
+                    <td class="tdTableDefinition">cidade</td><td class="tdTableDefinition">cidade</td><td class="tdTableDefinition">VARCHAR(50)</td><td class="tdTableDefinition" nowrap></td><td class="tdTableDefinition" nowrap></td>
+                </tr>
+                <tr>
+                    <td colspan="4">
+                        <div class="comment">Cidade da localiza&ccedil;&atilde;o do im&oacute;vel.</div>
+                    </td>
+                </tr>
+                <tr valign="top">
+                    <td class="tdTableDefinition">uf</td><td class="tdTableDefinition">uf</td><td class="tdTableDefinition">VARCHAR(25)</td><td class="tdTableDefinition" nowrap></td><td class="tdTableDefinition" nowrap></td>
+                </tr>
+                <tr>
+                    <td colspan="4">
+                        <div class="comment">Abrevia&ccedil;&atilde;o do estado de localiza&ccedil;&atilde;o.</div>
+                    </td>
+                </tr>
+                <tr valign="top">
+                    <td class="tdTableDefinition">cep</td><td class="tdTableDefinition">cep</td><td class="tdTableDefinition">VARCHAR(12)</td><td class="tdTableDefinition" nowrap></td><td class="tdTableDefinition" nowrap></td>
+                </tr>
+                <tr>
+                    <td colspan="4">
+                        <div class="comment">N&uacute;meros do c&oacute;digo de endere&ccedil;amento postal.</div>
+                    </td>
+                </tr>
+                <tr valign="top">
+                    <td class="tdTableDefinition">nome_regiao</td><td class="tdTableDefinition">nome_regiao</td><td class="tdTableDefinition">VARCHAR(25)</td><td class="tdTableDefinition" nowrap></td><td class="tdTableDefinition" nowrap>NOT NULL</td>
+                </tr>
+                <tr>
+                    <td colspan="4">
+                        <div class="comment">Nome da regi&atilde;o.</div>
+                    </td>
+                </tr>
+            </table>
+            <div class="references">
+                <p class="subTitle">Referenced By</p>
+                <ul>
+                    <li>
+                        <a href="#departamentos">departamentos</a> referencing (id_localizacao)
+                    </li>
+                    <li>
+                        <a href="#paises">paises</a> referencing (id_localizacao)
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="tableNameHeading">
+            <h1>
+                paises<a name="paises"></a>
+            </h1>
+            <h2>
+      (Physical Name: paises)
+      </h2>
+        </div>
+        <div class="table">
+            <table class="tableDefinition" width="100%">
+                <tr>
+                    <td class="tdTableHeading tdLogicalColName">Logical Column Name</td><td class="tdTableHeading tdPhysicalColName">Physical Column Name</td><td class="tdTableHeading tdDataType">Type</td><td class="tdTableHeading tdPkFlag">PK</td><td class="tdTableHeading tdNullFlag">Nullable</td>
+                </tr>
+                <tr valign="top">
+                    <td class="tdTableDefinition">id_pais (PK)</td><td class="tdTableDefinition">id_pais</td><td class="tdTableDefinition">CHAR</td><td class="tdTableDefinition" nowrap>PK</td><td class="tdTableDefinition" nowrap>NOT NULL</td>
+                </tr>
+                <tr>
+                    <td colspan="4">
+                        <div class="comment">Chave prim&aacute;ria da tabela (gerada de forma incremental).</div>
+                    </td>
+                </tr>
+                <tr valign="top">
+                    <td class="tdTableDefinition">nome</td><td class="tdTableDefinition">nome</td><td class="tdTableDefinition">VARCHAR(50)</td><td class="tdTableDefinition" nowrap></td><td class="tdTableDefinition" nowrap>NOT NULL</td>
+                </tr>
+                <tr>
+                    <td colspan="4">
+                        <div class="comment">Nome do pais cadastrado.</div>
+                    </td>
+                </tr>
+                <tr valign="top">
+                    <td class="tdTableDefinition">id_localizacao
+                &nbsp;(<a href="#localizacoes">FK</a>)
+              </td><td class="tdTableDefinition">id_localizacao</td><td class="tdTableDefinition">INTEGER</td><td class="tdTableDefinition" nowrap></td><td class="tdTableDefinition" nowrap>NOT NULL</td>
+                </tr>
+                <tr>
+                    <td colspan="4">
+                        <div class="comment">Chave estranjeira da tabela localizacoes, para referenciar dados mais detalhados sobre a localiza&ccedil;&atilde;o do pais cadastrado.</div>
+                    </td>
+                </tr>
+            </table>
+            <div class="references">
+                <p class="subTitle">References</p>
+                <ul>
+                    <li>
+                        <a href="#localizacoes">localizacoes</a> through (id_localizacao)
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </body>
+</html>
