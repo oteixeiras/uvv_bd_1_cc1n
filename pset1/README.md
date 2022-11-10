@@ -7,9 +7,9 @@ tremamente difíceis) para ajudar na fixação do conteúdo
 
 ## Informações sobre a solução
  ### Encontra-se nesse subdiretórios
- - Arquivo que contendo o Modelo lógico da modelagem das tabelas,
- - Script para a geração das modelagens criadas no PostgreSql
- - Script para a geração das modelagens criadas no MariaDb
+ - Arquivo que contendo o [Modelo lógico](https://github.com/oteixeiras/uvv_bd_1_cc1n/blob/main/pset1/psett1.architect.xml) da modelagem das tabelas,
+ - Script para a geração das modelagens criadas no [PostgreSql](https://github.com/oteixeiras/uvv_bd_1_cc1n/blob/main/pset1/cc1n_202203795_postgresql_hr.sql)
+ - Script para a geração das modelagens criadas no [MariaDb](https://github.com/oteixeiras/uvv_bd_1_cc1n/blob/main/pset1/cc1n_202203795_mariadb_hr.sql.sql)
 
  ### Pontos de atenção
   - Possuir um dos Bancos de Dados instado na máquina, visando o script que queira utilizar ([Postgres](https://www.postgresql.org/)/ [MariaDB](https://mariadb.org/))
