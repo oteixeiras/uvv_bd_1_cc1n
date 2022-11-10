@@ -7,14 +7,20 @@ tremamente difíceis) para ajudar na fixação do conteúdo
 
 ## Informações sobre a solução
  ### Encontra-se nesse subdiretórios
- - Arquivo que contendo o [Modelo lógico](https://github.com/oteixeiras/uvv_bd_1_cc1n/blob/main/pset1/psett1.architect.xml) da modelagem das tabelas,
+ - Arquivo que contendo o [Modelo lógico](https://github.com/oteixeiras/uvv_bd_1_cc1n/blob/main/pset1/cc1n_202203795.architect) da modelagem das tabelas,
  - Script para a geração das modelagens criadas no [PostgreSql](https://github.com/oteixeiras/uvv_bd_1_cc1n/blob/main/pset1/cc1n_202203795_postgresql_hr.sql)
- - Script para a geração das modelagens criadas no [MariaDb](https://github.com/oteixeiras/uvv_bd_1_cc1n/blob/main/pset1/cc1n_202203795_mariadb_hr.sql.sql)
+ - Script para a geração das modelagens criadas no [MariaDb](https://github.com/oteixeiras/uvv_bd_1_cc1n/blob/main/pset1/cc1n_202203795_mariadb_hr.sql)
 
  ### Pontos de atenção
   - Possuir um dos Bancos de Dados instado na máquina, visando o script que queira utilizar ([Postgres](https://www.postgresql.org/)/ [MariaDB](https://mariadb.org/))
   - Ter instalado um utilitários de administração e desenvolvimento (Pessoalmente recomendo o uso do [Dbeaver](https://dbeaver.io/), pois permite trabalhar com diferentes Bancos de Dados)
   
   Para criar a modelagem, o progarama utilizado foi o [SQL Power Architect](https://bestofbi.com/architect-download/)
+  
+  ### Para facilitar a visualização da modelagem, existe nesse projeto rquivos em outros diferentes formatos
+  - [Visualização em pdf](https://github.com/oteixeiras/uvv_bd_1_cc1n/blob/main/pset1/hr_modelo_conceitual.pdf)
+  - [Visualização em html](https://github.com/oteixeiras/uvv_bd_1_cc1n/blob/main/pset1/hr_modelo_conceitual.html)
+  - [Visualização em png](https://github.com/oteixeiras/uvv_bd_1_cc1n/blob/main/pset1/modelo_logico.png)
+ 
 
  ## Aberto à receber feedback e contribuções 
