@@ -1,2 +1,3 @@
 # uvv_bd_1_cc1n
-Pset1 resolution of the database matter
+## Repositorio direcionado a prática de exercícios relacionados a Matéria de Banco de Dados
+

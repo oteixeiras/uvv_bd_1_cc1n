@@ -1,17 +1,20 @@
-<<<<<<< HEAD
-# uvv_bd_1_cc1n
-Pset1 resolution of the database matter
-=======
-# pset_1
-Pset1 resolution of the database matter
+#Pset1 
+## introdução
+- Um Problem Set (PSet) é um conjunto de problemas e tarefas difíceis (alguns ex-
+tremamente difíceis) para ajudar na fixação do conteúdo 
 
-Questão 1: O que são sistemas de controles de versões? Por que são importantes?
-São sistemas que a partir do monitoramento de um arquivo, são capazes de amazenar e restaurar o estado de modificação do mesmo. Muito importante para garantir o histório das mudanças e os seus autores, podem assim, rever ou mesmo servir para documentar o projeto. Um caso de uso prático de usabilidade do versionamento, seria a necessidae de fazer rolback de uma aplicação em produção, devido a instabilidade das mudanças rescentes feitas no código.
+- Link para acesso da problematica apresnetada dentro desse repositório: [Pset1](https://drive.google.com/file/d/1Mm-0ztIToaWrwU48KIg3dGew-Bsz7Znb/view?usp=sharing)
 
-Questão 2: Qual a diferença entre o Git e o GitHub? Como eles estão relacionados?
-É possível usar um sem o outro?
+## Informações sobre a solução
+ ### Encontra-se nesse subdiretórios
+ - Arquivo que contendo o Modelo lógico da modelagem das tabelas,
+ - Script para a geração das modelagens criadas no PostgreSql
+ - Script para a geração das modelagens criadas no MariaDb
 
-Questão 3: O Git é um sistema distribuído de controle de versões. O que significa
-isso?
-Significa que vários desenvolvedores podem trabalhar em uma mesma base de código simultaneamente, pois o git além de permitir a atualização das partes modificadas de cada integrante, ajuda na resolução dos conflitos dos mesmos.
->>>>>>> 6f2ece0 (initial commit)
+ ### Pontos de atenção
+  - Possuir um dos Bancos de Dados instado na máquina, visando o script que queira utilizar ([Postgres](https://www.postgresql.org/)/ [MariaDB](https://mariadb.org/))
+  - Ter instalado um utilitários de administração e desenvolvimento (Pessoalmente recomendo o uso do [Dbeaver](https://dbeaver.io/), pois permite trabalhar com diferentes Bancos de Dados)
+  
+  Para criar a modelagem, o progarama utilizado foi o [SQL Power Architect](https://bestofbi.com/architect-download/)
+
+ ## Aberto à receber feedback e contribuções 
