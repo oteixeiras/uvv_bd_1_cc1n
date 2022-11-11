@@ -18,8 +18,8 @@ tremamente difíceis) para ajudar na fixação do conteúdo
   Para criar a modelagem, o progarama utilizado foi o [SQL Power Architect](https://bestofbi.com/architect-download/)
   
   ### Para facilitar a visualização da modelagem, existe nesse projeto rquivos em outros diferentes formatos
-  - [Visualização em pdf](https://github.com/oteixeiras/uvv_bd_1_cc1n/blob/main/pset1/hr_modelo_conceitual.pdf)
-  - [Visualização em html](https://github.com/oteixeiras/uvv_bd_1_cc1n/blob/main/pset1/hr_modelo_conceitual.html)
+  - [Visualização em pdf](https://github.com/oteixeiras/uvv_bd_1_cc1n/blob/main/pset1/hr_modelo_logico.pdf)
+  - [Visualização em html](https://github.com/oteixeiras/uvv_bd_1_cc1n/blob/main/pset1/hr_modelo_logico.html)
   - [Visualização em png](https://github.com/oteixeiras/uvv_bd_1_cc1n/blob/main/pset1/modelo_logico.png)
  
 
